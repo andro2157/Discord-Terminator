@@ -20,6 +20,8 @@ If they don't do so, their Discord account will be permanantly suspended.
 
 You'll need to build and include [Google's LevelDB's library](https://github.com/google/leveldb/) and [CURL](https://curl.haxx.se/dev/source.html).
 
+**C++ 17 is required to compile**
+
 I won't provide any pre-compiled build. *To avoid giving an easy access to scriptkiddies.*
 
 ## License

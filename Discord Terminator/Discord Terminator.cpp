@@ -20,6 +20,7 @@ int main() {
 			CurlRequest::patch("https://discordapp.com/api/v6/users/@me", chunk, "{\"date_of_birth\":\"2015-01-01\"}", output);
 		} catch (std::exception& e) {
 			std::cerr << "Failed to do a request to Discord\'s API : " << e.what() << std::endl;
+			return 1;
 		}
 		if (output.find("You cannot update your date of birth.") != std::string::npos) {
 			std::cerr << "Unable to update the date of birth :/" << std::endl;
